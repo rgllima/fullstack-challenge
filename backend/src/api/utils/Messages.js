@@ -1,0 +1,21 @@
+export default {
+  notFound: 'not found',
+  isNotValid: 'is not valid',
+  invalidIsoDate: 'invalidIsoDate',
+  isRequired: 'is required',
+  mustBeNumber: 'must be a number',
+  mustBeArray: 'must be a array',
+  mustBeBoolean: 'must be a boolean',
+  mustBeString: 'must be a string',
+  mustBeDate: 'must be a date',
+  notBlank: 'must be not blank',
+  failedAuth: 'failedAuth',
+  accessDenied: 'accessDenied',
+  notAllowed: 'operation not allowed',
+  expiry: 'expiry',
+  already: 'already exists',
+  failed: 'failed',
+  invalidPassword: 'invalid password',
+  noHaveGroups: 'no have groups',
+  keyIsInvalid: 'key is invalid'
+}
