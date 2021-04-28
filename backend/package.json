@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rafael G Lima",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn migrate && npx -p @babel/core -p @babel/node babel-node --presets @babel/preset-env src/app.js",
+    "dev": "yarn migrate && export NODE_ENV=development && nodemon --exec babel-node src/app.js",
+    "migration:generate": "npx sequelize-cli migration:generate --name",
+    "undomig": "npx sequelize-cli db:migrate:undo",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed:all": "npx sequelize-cli db:seed:all",
+    "initDb": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npm run migrate && npm run seed:all"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/plugin-proposal-private-methods": "^7.10.1",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-eslint": "^10.1.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^6.2.1",
+    "eslint-config-standard": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  }
+}
