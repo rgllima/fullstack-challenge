@@ -1,3 +1,4 @@
+import ProfessionalForm from "./ProfessionalFrom/ProfessionalForm";
 import ProfessionForm from "./ProfessionForm/ProfessionForm";
 
-export {  ProfessionForm }
+export { ProfessionalForm, ProfessionForm }
