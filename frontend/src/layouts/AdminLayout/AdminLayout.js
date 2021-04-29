@@ -14,6 +14,7 @@ import {
 import { Menu as MenuIcon } from "@material-ui/icons";
 import adminStyles from "./Styles";
 import SideBar from "../../components/SideBar";
+import Profession from "../../pages/Profession";
 
 const useStyles = makeStyles((theme) => adminStyles(theme));
 
@@ -54,6 +55,7 @@ const AdminLayout = () => {
         <Grid className={classes.content} item xs={12} md={10}>
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/professions" exact component={Profession} />
           </Switch>
         </Grid>
       </Grid>
