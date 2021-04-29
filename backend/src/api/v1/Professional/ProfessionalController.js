@@ -18,7 +18,7 @@ export default {
   async getAll (req, res) {
     try {
       const queryParams = req.query
-      const professionals = await service.listAll(queryParams)
+      const professionals = await service.find(queryParams)
       return res.send(professionals)
     } catch (error) {
       return handlerControllerError(res, error)
@@ -27,7 +27,7 @@ export default {
 
   async getOne (req, res) {
     try {
-      const professional = await service.retrieve(req.params?.id)
+      const professional = await service.findOne(req.params?.id)
       return res.send(professional)
     } catch (error) {
       return handlerControllerError(res, error)

@@ -1,12 +1,11 @@
 'use strict'
 
-import { Professional } from '../../../models/'
+import { Professional, Profession } from '../../../models/'
 import FindAndCountAll from '../../utils/FindAndCountAll'
 import validate from '../../utils/YupValidate'
 import { handlerServiceError, makeErrorValidation } from '../../utils/ErrorHandler'
 import Messages from '../../utils/Messages'
 import Sequelize from 'sequelize'
-import ProfessionService from '../Profession/ProfessionService'
 import ProfessionalValidation from "./ProfessionalValidation";
 
 const { Op } = Sequelize
@@ -73,7 +72,10 @@ export default {
       } = params
 
       const queryOptions = {
-        where: {}
+        include: [{
+          model: Profession, as: "Profession"
+        }],
+        where: {},
       }
 
       if (email) {
