@@ -68,7 +68,8 @@ export default {
       const {
         page = 0,
         ignorePagination = false,
-        description = null
+        description = null,
+        active
       } = params
 
       const queryOptions = {
@@ -79,6 +80,10 @@ export default {
         queryOptions.where.description = {
           [Op.iLike]: `%${description}%`
         }
+      }
+
+      if (active) {
+        queryOptions.where.active = active
       }
 
       return await FindAndCountAll(Profession, queryOptions, page, ignorePagination)
