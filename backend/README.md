@@ -7,9 +7,9 @@
 | -- api
 | --- utils
 | --- v1
-|---- __test__
-|---- Entidade
-|------ EntidadeController
+| ---- __test__
+| ---- Entidade
+| ------ EntidadeController
 | ------ EntidadeRoute
 | ------ EntidadeService
 | ------ EntidadeValidation
