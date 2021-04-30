@@ -8,10 +8,10 @@ import {
 } from "@material-ui/core";
 import { Formik, Form } from 'formik';
 import professionalFormStyles from "./Styles";
-import FormField from "../../FormField";
-import useProfession from "../../../hooks/useProfession";
-import FormSwitch from "../../FormSwitch";
-import { professionSchema } from "../../../common/schemas/professionSchema";
+import FormField from "../shared/FormField";
+import useProfession from "../../hooks/useProfession";
+import FormSwitch from "../shared/FormSwitch";
+import { professionSchema } from "../../common/schemas/professionSchema";
 
 const useStyles = makeStyles((theme) => professionalFormStyles(theme));
 

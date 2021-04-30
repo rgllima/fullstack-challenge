@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Box, Button, Modal, makeStyles } from "@material-ui/core";
-import ProfessionForm from "../../components/Forms/ProfessionForm/ProfessionForm";
-import Table from "../../components/Table";
+import ProfessionForm from "../../components/ProfessionForm/";
+import Table from "../../components/shared/Table";
 import professionStyles from "./Styles";
 import useProfession from "../../hooks/useProfession";
 

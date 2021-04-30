@@ -3,7 +3,7 @@ import { Box, Grid, makeStyles } from "@material-ui/core";
 import { useLocation, useHistory } from 'react-router-dom'
 import ManagerImage from "../../assets/manager.png"
 import sideBarStyles from "./Styles";
-import Navigation from "../Navigation";
+import Navigation from "../shared/Navigation";
 
 const useStyles = makeStyles((theme) => sideBarStyles(theme));
 

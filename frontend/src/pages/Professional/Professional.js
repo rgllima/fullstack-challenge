@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Box, Button, Modal, makeStyles } from "@material-ui/core";
 import professionalStyles from "./Styles";
-import Table from "../../components/Table";
-import { ProfessionalForm } from "../../components/Forms";
+import Table from "../../components/shared/Table";
+import ProfessionalForm from "../../components/ProfessionalFrom";
 import useProfessional from "../../hooks/useProfessional";
 
 const useStyles = makeStyles((theme) => professionalStyles(theme));

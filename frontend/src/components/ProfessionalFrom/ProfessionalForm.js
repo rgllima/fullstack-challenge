@@ -7,14 +7,14 @@ import {
   makeStyles
 } from "@material-ui/core";
 import { Formik, Form } from 'formik';
-import { professionalSchema } from "../../../common/schemas/professionalSchema";
+import { professionalSchema } from "../../common/schemas/professionalSchema";
 import professionalFormStyles from "./Styles";
-import FormField from "../../FormField";
-import FormSelect from "../../FormSelect";
-import useProfessional from "../../../hooks/useProfessional";
-import useProfession from "../../../hooks/useProfession";
-import { phoneMask } from "../../../common/masks";
-import FormSwitch from "../../FormSwitch";
+import FormField from "../shared/FormField";
+import FormSelect from "../shared/FormSelect";
+import useProfessional from "../../hooks/useProfessional";
+import useProfession from "../../hooks/useProfession";
+import { phoneMask } from "../../common/masks";
+import FormSwitch from "../shared/FormSwitch";
 
 const useStyles = makeStyles((theme) => professionalFormStyles(theme));
 
