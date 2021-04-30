@@ -18,5 +18,4 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/api/v1', routes(express.Router()))
 
-app.listen(environment.appPort)
-console.log(`[SERVER] Started ${environment.nodeEnv} in port ${environment.appPort}`)
+module.exports = app
