@@ -56,13 +56,19 @@ Tela de Profissões
 Tela de Profissionais
 ![Tela 2](files/tela2.png)
 
+Tela de Adição de Profissionais
+![Tela 2](files/tela5.png)
+
+Tela de Edição de Profissionais
+![Tela 2](files/tela6.png)
+
 ### Versão Responsiva
  
  O desenvolvimento considerou a visualização responsiva do projeto. Infelizmente o tipo de tabela que escolhi exige uma interveção
  via css para se ajustar, como não era prioridade, deixei para ajustar depois.
  
- Menu e Tabela (com problema)
- 
+Menu e Tabela
+
 ![Tela 3](files/tela3.png)
 
 Menu lateral ao clicar no botão.
