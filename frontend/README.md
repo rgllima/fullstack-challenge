@@ -64,8 +64,8 @@ Tela de Edição de Profissionais
 
 ### Versão Responsiva
  
- O desenvolvimento considerou a visualização responsiva do projeto. Infelizmente o tipo de tabela que escolhi exige uma interveção
- via css para se ajustar, como não era prioridade, deixei para ajustar depois.
+ O desenvolvimento considerou a visualização responsiva do projeto. Infelizmente o tipo de tabela que escolhi exige uma alteração
+ no css para se ajustar. Eu priorizei os requisitos do desafio, mas irei ajustar a tabela para dispositivos móveis logo que possível.
  
 Menu e Tabela
 
