@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "src/server.js",
   "scripts": {
-    "start": "yarn migrate && npx -p @babel/core -p @babel/node babel-node --presets @babel/preset-env src/server.js",
+    "start": "yarn migrate && export NODE_ENV=production && babel-node src/server.js",
     "dev": "yarn migrate && export NODE_ENV=development && nodemon --exec babel-node src/server.js",
     "migration:generate": "npx sequelize-cli migration:generate --name",
     "undomig": "npx sequelize-cli db:migrate:undo",
