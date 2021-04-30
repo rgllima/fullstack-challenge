@@ -1,9 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Rafael G Lima",
   "license": "MIT",
+  "main": "src/server.js",
   "scripts": {
     "start": "yarn migrate && npx -p @babel/core -p @babel/node babel-node --presets @babel/preset-env src/server.js",
     "dev": "yarn migrate && export NODE_ENV=development && nodemon --exec babel-node src/server.js",
